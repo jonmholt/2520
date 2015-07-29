@@ -44,7 +44,7 @@
     color:#C01A2C;
   }
   nav a {
-    padding-right: 10px;
+    padding: 0 5px;
     -o-transition: color .4s;
     -ms-transition: color .4s;
     -webkit-transition: color .4s;
@@ -52,8 +52,8 @@
   }
   nav a svg { 
     width: 45px; height: 45px; position: absolute;
-    top: 75px;
-    right: 0px;
+    top: 60%;
+    right: 5%;
     display: block;
   }
 	nav a svg:hover { 
@@ -88,7 +88,76 @@
     padding: 0;
   }
 
+  button, input, select, textarea {
+    border:none;
+    -webkit-appearance: none;
+    border-radius: 0;
+    font-size: 100%;
+    line-height: normal!important;
+    margin: 0;
+    vertical-align: middle;
+  }
+  input, button {
+    vertical-align: top;
+  }
+  input {
+    background: #EBEDF0;
+    color: #17191A;
+    border-radius: 3px;
+    padding: 15px;
+    margin-bottom: 5px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  button, .buttonbigger a {
+    background: #20ACE6;
+    color: #FFF;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 15px;
+    width: 100%;
+    font-weight: 500;
+  }
+  form {
+    vertical-align: top;
+    margin: 30px 0;
+    display: block;
+  }
+  .homejon {
+    max-width: 50%;
+    margin: 0 auto 30px auto;
+    display: block;
+    border-radius: 1500px;
+    overflow: hidden;
+  }
+  .image-container{
+    height: 250px;
+    overflow: hidden;
+  } 
+  
+  .container p {
+    margin-bottom: .5em;
+  }
+
+  .sumome-icon {display:none;}
+  .sumome-smartbar-button{text-transform: capitalize;}
   @media screen and (min-width: 766px) {
+    .homejon {
+      max-width: 130px;
+      margin: 0 -60px 30px 30px;
+      display: block;
+      border-radius: 1500px;
+      overflow: hidden;
+      float: right;
+    }
+    .image-container{
+      height: 100%;
+      overflow: visible;
+      display:inline;
+    } 
+
     .container {
       margin: 0 auto;
       max-width: 720px;
@@ -107,14 +176,29 @@
       font-size: 14px;
       width: 100%;
     }
+    input {
+      width: 400px;
+    }
+    button {
+      width: auto;
+    }
   }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 900px) {
+    .homejon {
+      max-width: 230px;
+      margin: 0 -60px 30px 30px;
+      display: block;
+      float: right;
+    }
     .container {
       margin: 0 auto;
       max-width: 950px;
     }
+    .container p {
+      margin-bottom:.5em;
+    }
     h2 {
-      font-size: 54px;
+      /*font-size: 54px;*/
       letter-spacing: -1px;
     }
   }
